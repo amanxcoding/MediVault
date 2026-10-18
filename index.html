@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5faf6" />
+  <meta name="description" content="A calmer way to care for your family's health records." />
+  <title>MediVault — Family health, together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="medivault-design-system.css" />
+</head>
+<body>
+  <a class="skip-link" href="#pageContent">Skip to main content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-row"><a class="brand" href="#overview" aria-label="MediVault home"><span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 8v16M8 16h16"/></svg></span><span class="brand-name">MediVault<small>FAMILY HEALTH VAULT</small></span></a><button class="collapse-nav" id="collapseNav" aria-label="Collapse sidebar" title="Collapse sidebar">‹</button></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg></span>Overview</button>
+        <button class="nav-item" data-view="family"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M10 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM20 8v6M23 11h-6"/></svg></span>Family members<span class="nav-count">3</span></button>
+        <button class="nav-item" data-view="vault"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></svg></span>Medical vault<span class="nav-count">12</span></button>
+        <button class="nav-item" data-view="timeline"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>Health timeline</button>
+        <button class="nav-item" data-view="medications"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 20.5 20.5 10.5a5.7 5.7 0 0 0-8-8l-10 10a5.7 5.7 0 0 0 8 8ZM8 8l8 8"/></svg></span>Medications<span class="nav-dot"></span></button>
+      </nav>
+      <div class="workspace-label care-label">CARE &amp; SUPPORT</div>
+      <nav class="primary-nav" aria-label="Care and support">
+        <button class="nav-item" data-view="emergency"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11ZM12 8v8M8 12h8"/></svg></span>Emergency access</button>
+        <button class="nav-item" data-view="labs"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v7l-5 8a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-8V3M8 15h8"/></svg></span>Labs &amp; care</button>
+      </nav>
+      <div class="sidebar-spacer"></div>
+      <div class="privacy-note"><span class="privacy-icon">⌑</span><div><strong>Your family's data is private</strong><p>Only you decide what to share.</p><button data-view="settings">Privacy settings <span>↗</span></button></div></div>
+      <button class="nav-item settings-link" data-view="settings"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.7a8 8 0 0 1-1.7 1l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-1.7-1l-1.7.7-1.4-2.4L7.3 15a8 8 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.7a8 8 0 0 1 1.7-1L11 7.4h2.8l.3 1.8a8 8 0 0 1 1.7 1l1.7-.7 1.4 2.4-1.4 1.1a8 8 0 0 1-.1 2Z"/></svg></span>Settings</button>
+      <button class="nav-item" data-view="landing"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/><path d="M19 13v6H5V5h6"/></svg></span>Public website</button>
+      <div class="sidebar-profile"><div class="avatar avatar-you">AS</div><div><strong>Aarav Sharma</strong><small>Family admin · Demo</small></div><button class="more-button" aria-label="Profile options" id="profileMenu">···</button></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar" id="mobileMenu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <div class="crumb"><span>My workspace</span><b>/</b><strong id="currentCrumb">Overview</strong></div>
+      <div class="top-actions"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="globalSearch" placeholder="Search records, people..." aria-label="Search records and people"><kbd>⌘ K</kbd></label><button class="icon-button notification-button" id="notifications" aria-label="Notifications" aria-haspopup="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><i></i></button><button class="top-avatar" id="topProfile" aria-label="Aarav Sharma profile · Demo" aria-haspopup="menu" aria-expanded="false">AS</button></div>
+      </header>
+      <div id="pageContent" class="page-content"></div>
+      <footer class="app-footer"><span>MediVault <b>·</b> Your family’s health, together</span><span><i></i> Local demo · not connected to cloud storage</span></footer>
+    </main>
+  </div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <button class="mobile-backdrop" id="mobileBackdrop" type="button" aria-label="Close navigation"></button>
+  <dialog id="appDialog" class="modal"><form method="dialog" class="modal-card"><button class="modal-close" aria-label="Close dialog">×</button><div id="modalContent"></div></form></dialog>
+  <script src="app.js"></script>
+  <script src="redesign.js"></script>
+  <script src="medivault.js"></script>
+  <script src="backend-ui.js"></script>
+</body>
+</html>
